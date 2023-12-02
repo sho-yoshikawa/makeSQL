@@ -6,7 +6,6 @@ CNT=0
 
 while read data_line
 do
-  echo $CNT
   TARGET="'$data_line'"
   STATUS=$(grep $TARGET $TEST_FILE)
   if [ "$STATUS" = "1" ]; then
